@@ -1,0 +1,112 @@
+body {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #333; /* Темный фон */
+  margin: 0;
+  color: #fff; /* Белый текст */
+ }
+ 
+ .container {
+  background-color: #444; /* Темный фон контейнера */
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Более заметная тень */
+  width: 800px;
+  max-width: 95%; 
+  color: #fff; /* Белый текст внутри контейнера */
+ }
+ 
+ header {
+  text-align: center;
+  margin-bottom: 30px;
+ }
+ 
+ nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+ }
+ 
+ nav li {
+  display: inline;
+  margin: 0 10px;
+ }
+ 
+ nav a {
+  text-decoration: none;
+  color: #eee; /* Светло-серый цвет ссылок */
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+ }
+ 
+ nav a:hover {
+  background-color: #555; /* Темно-серый фон при наведении */
+ }
+ 
+ .device-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+  grid-gap: 20px;
+ }
+ 
+ .device {
+  background-color: #555; /* Темно-серый фон устройств */
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  color: #eee; /* Светло-серый текст */
+ }
+ 
+ .device i {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #aaa; /* Светло-серый цвет иконок */
+ }
+ 
+ .control-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+ }
+ 
+ .control-button[data-state="on"] {
+  background-color: #f44336;
+ }
+ 
+ .control-button:hover {
+  background-color: #45a049; 
+ }
+ 
+ .control-button[data-state="on"]:hover {
+  background-color: #d32f2f; 
+ }
+ 
+ .slider-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+ }
+ 
+ .slider-container label {
+  margin-right: 10px;
+  flex-shrink: 0; 
+ }
+ 
+ input[type="range"] {
+  width: 200px;
+  margin-right: 10px;
+ }
+ 
+ h2 {
+  margin-top: 20px;
+ }

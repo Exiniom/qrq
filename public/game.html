@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Умный Дом - Игровая</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/a076d05399.js">
+</head>
+<body>
+    <div class="container">
+        <h1>Умный Дом - Игровая</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="hall.html">Зал</a></li>
+                <li><a href="game.html">Игровая</a></li>
+                <li><a href="kitchen.html">Кухня</a></li>
+            </ul>
+        </nav>
+
+        <section class="devices">
+            <h2>Устройства</h2>
+            <div class="device">
+                <i class="fas fa-lightbulb"></i>
+                <h3>Свет в игровой</h3>
+                <button class="control-button" data-device="gameRoomLight" data-state="off">Включить</button>
+            </div>
+            <div class="device">
+                <i class="fas fa-gamepad"></i>
+                <h3>Игровая консоль</h3>
+                <button class="control-button" data-device="gameConsole" data-state="off">Включить</button>
+            </div>
+            <div class="device">
+                <i class="fas fa-headphones"></i>
+                <h3>Наушники</h3>
+                <button class="control-button" data-device="headphones" data-state="off">Включить</button>
+            </div>
+            <!-- Добавьте другие устройства игровой комнаты -->
+        </section>
+    </div>
+    <script src="ym.js"></script>
+</body>
+</html>
